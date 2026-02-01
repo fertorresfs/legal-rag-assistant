@@ -19,6 +19,24 @@
   <img src="https://img.shields.io/badge/Focus-NLP%20%26%20Law-green?style=for-the-badge" alt="LegalTech">
 </div>
 
+/legal-rag-assistant
+│
+├── /data
+│   ├── /raw_contracts       # PDFs de exemplo (Anonimizados)
+│   └── /vector_store        # Banco de dados vetorial persistido (ChromaDB)
+│
+├── /src
+│   ├── ingest.py            # Script de Chunking e Embedding
+│   ├── rag_engine.py        # Lógica de Retrieval e Chain
+│   └── prompts.py           # Templates de Prompt (Engenharia de Prompt)
+│
+├── /app
+│   └── streamlit_app.py     # Interface de Chat (Frontend)
+│
+├── .env.example             # Exemplo de config (API Keys)
+├── requirements.txt
+└── README.md
+
 ---
 
 ## ⚖️ Problem Statement
