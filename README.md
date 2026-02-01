@@ -74,33 +74,36 @@ graph LR
 
 ## 🛡️ Hallucination Guardrails (Prompt Engineering)
 To ensure reliability for legal professionals, I implemented specific prompt engineering techniques:
-
+```
 "I Don't Know" Token: The model is explicitly instructed to refuse answering if the context is insufficient, rather than inventing facts.
 
 Source Tracking: The return object includes metadata (page_number, document_name) for verification.
 
 Temperature Zero: Deterministic outputs to minimize creative variance.
-
+```
 System Prompt Example:
-
+```
 "You are a Senior Legal Assistant. Answer the user question based ONLY on the following context context. If the answer is not in the context, say 'I cannot find this information in the documents'. Do not use outside knowledge."
-
+```
 ## 💻 Demo & Usage
 1. Installation
-Bash
+```Bash
 git clone [https://github.com/fertorresfs/legal-rag-assistant.git](https://github.com/fertorresfs/legal-rag-assistant.git)
 pip install -r requirements.txt
+```
 2. Run the Streamlit Interface
-Bash
+```Bash
 streamlit run app/streamlit_app.py
+```
 3. Example Query
+```
 User: "Does this contract contain a clause regarding GDPR or LGPD compliance?"
 
 LRA Agent:
 
 "Yes. According to Clause 14.2 (Page 8), the Data Controller must ensure compliance with LGPD (Law 13.709/2018). Furthermore, Clause 14.5 specifies a penalty of 2% of revenue in case of a data breach."
-
-🛠️ Tech Stack
+```
+## 🛠️ Tech Stack
 Orchestration: LangChain / LlamaIndex
 
 LLM: OpenAI GPT-4o-mini (Cost-optimized) or Llama-3 (Local)
@@ -111,20 +114,20 @@ Frontend: Streamlit
 
 Embedding: OpenAI text-embedding-3-small
 
-🔬 Research Context
+## 🔬 Research Context
 This project serves as a proof-of-concept for my Master's thesis on "Enhancing Information Retrieval in Long-Context Legal Documents". Future improvements will include:
 
 Hybrid Search: Combining Keyword Search (BM25) with Semantic Search (Dense).
 
 Re-ranking: Using Cohere Rerank to improve context precision.
 
-👤 Author
+## 👤 Author
 Fernando Torres MSc Candidate in Computer Science (USP) | Senior Data Scientist
 
 <a href="https://www.linkedin.com/in/fertorresfs/"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin"> </a>
+<i class="bi bi-linkedin"></i>
 
-
-### 🧠 Instruções Finais do Consultor:
+## 🧠 Instruções Finais do Consultor:
 
 1.  **O "Pulo do Gato" (Mermaid Diagram):** Eu incluí um bloco de código `mermaid` no README. O GitHub renderiza isso automaticamente como um diagrama de arquitetura profissional. Isso mostra que você sabe documentar sistemas complexos.
 2.  **Research Context:** Adicionei a seção "Research Context" para conectar explicitamente com a USP. Isso valida seu currículo acadêmico.
