@@ -19,6 +19,9 @@
   <img src="https://img.shields.io/badge/Focus-NLP%20%26%20Law-green?style=for-the-badge" alt="LegalTech">
 </div>
 
+## 📂 Estrutura do Repositório
+Para um projeto de GenAI, a estrutura deve mostrar que você sabe organizar prompts e dados.
+```
 /legal-rag-assistant
 │
 ├── /data
@@ -36,7 +39,7 @@
 ├── .env.example             # Exemplo de config (API Keys)
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## ⚖️ Problem Statement
